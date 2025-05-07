@@ -62,7 +62,6 @@ const PredictionForm: React.FC = () => {
                 <SelectValue placeholder="Select material" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Select material</SelectItem>
                 {materials.map((material) => (
                   <SelectItem key={material.id} value={material.id}>
                     {material.name} ({material.category})
@@ -105,7 +104,6 @@ const PredictionForm: React.FC = () => {
                 <SelectValue placeholder="Select timeline" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Select timeline</SelectItem>
                 <SelectItem value="1month">1 Month</SelectItem>
                 <SelectItem value="3month">3 Months</SelectItem>
                 <SelectItem value="6month">6 Months</SelectItem>
